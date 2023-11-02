@@ -1,1 +1,1 @@
-import "./firebase.js"
+import "./signupForm.js"
