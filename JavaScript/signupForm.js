@@ -17,7 +17,25 @@ document.getElementById('signup-form').addEventListener('submit', async function
         const modal = bootstrap.Modal.getInstance(signupModal)
         modal.hide()
     } catch (error) {
-        console.log(error);
+        console.log(error.message);
+        console.log(error.code);
+        // aqui va el codigo para mostrar las alertas de error
+        if(error.code == 'auth/email-already-in-use')
+        {
+            alert('Email already in use')
+        }
+        else if(error.code === 'auth/invalid-email')
+        {
+            alert('Invalid email')
+        }
+        else if(error.code === 'auth/weak-password')
+        {
+            alert('Password is too weak')
+        }
+        else if(error.code)
+        {
+            alert('Something went wrong')
+        }
     }
 
 
