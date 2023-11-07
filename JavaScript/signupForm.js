@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"
 import { auth } from './firebase.js'
+import { showMessage } from './showMessage.js'
 const signupForm = document.querySelector('#signup-form')
 console.log(signupForm)
 document.getElementById('signup-form').addEventListener('submit', async function (event) {
@@ -16,25 +17,32 @@ document.getElementById('signup-form').addEventListener('submit', async function
         const signupModal = document.querySelector('#signupModal')
         const modal = bootstrap.Modal.getInstance(signupModal)
         modal.hide()
+        //Toastify js
+        showMessage("Welcome "+ userCredentials.user.email, "success")
+
     } catch (error) {
         console.log(error.message);
         console.log(error.code);
         // aqui va el codigo para mostrar las alertas de error
         if(error.code == 'auth/email-already-in-use')
         {
-            alert('Email already in use')
+            showMessage("Email already in use ", "error")
+            //alert('Email already in use')
         }
         else if(error.code === 'auth/invalid-email')
         {
-            alert('Invalid email')
+            showMessage("Invalid email ", "error")
+            //alert('Invalid email')
         }
         else if(error.code === 'auth/weak-password')
         {
-            alert('Password is too weak')
+            showMessage("Password is too weak ", "error")
+            //alert('Password is too weak')
         }
         else if(error.code)
         {
-            alert('Something went wrong')
+            showMessage(error.message, "error")
+           // alert('Something went wrong')
         }
     }
 
