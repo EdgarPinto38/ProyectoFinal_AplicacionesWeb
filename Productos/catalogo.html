@@ -4,311 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Productos</title>
-    <style>
-        /* Estilos para las imágenes en las filas */
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    <!-- Agrega el enlace a la hoja de estilos de Bootstrap si no lo has hecho -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-        .decoracion {
-            flex: 0 0 calc(100% / 3 - 20px);
-            margin: 10px;
-        }
-
-        .decoracion img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
-    <h1>Tienda de Productos</h1>
+    <h1 class="text-center">Tienda de Productos</h1>
 
-    <!-- Categorización y filtrado de productos -->
-    <label for="category">Categoría:</label>
-    <select id="category">
-        <option value="todos">Todos</option>
-        <option value="decoracion">Decoración</option>
-        <option value="herramientas">Herramientas</option>
-        <option value="macetas">Macetas</option>
-        <option value="soportes">Soportes</option>
-    </select>
-
-    <label for="price-range">Rango de precio:</label>
-    <select id="price-range">
-        <option value="todos">Todos</option>
-        <option value="0-25">$0 - $25</option>
-        <option value="25-50">$25 - $50</option>
-        <option value="50-100">$50 - $100</option>
-    </select>
-
-
-    <!-- Listado de productos -->
-    <div class="product-container">
+    <div class="container">
         <div class="row">
-        <div class="col-md-4">
-        <div class="decoracion">
-            <div class="slider-container">
-                <div class="slider">
-                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p1_1.PNG" alt="Producto 1">
-                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p1_2.PNG" alt="Producto 1-2">
-                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p1_3.PNG" alt="Producto 1-3">
-                </div>
-                <button class="slider-button slider-button-prev">Anterior</button>
-                <button class="slider-button slider-button-next">Siguiente</button>
-            </div>
-            <h2>Producto 1</h2>
-            <p>Descripción del Producto 1.</p>
-            <p>Precio: $10</p>
-            <a href="producto1.html">Ver detalles</a>
-        </div>
-    </div>
-</div>
-
-
-    <div class="product-container">
-        <div class="decoracion">
-            <div class="slider-container">
-                <div class="slider">
-                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p2_1.PNG" alt="Producto 2">
-                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p2_2.PNG" alt="Producto 2-2">
-                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p2_3.PNG" alt="Producto 2-3">
-                </div>
-                <button class="slider-button slider-button-prev">Anterior</button>
-                <button class="slider-button slider-button-next">Siguiente</button>
-            </div>
-            <h2>Producto 2</h2>
-            <p>Descripción del Producto 2.</p>
-            <p>Precio: $10</p>
-            <a href="producto2.html">Ver detalles</a>
-        </div>
-
-
-    <div class="product-container">
-            <div class="decoracion">
-                <div class="slider-container">
-                    <div class="slider">
-                        <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p3_1.PNG" alt="Producto 3">
-                        <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p3_2.PNG" alt="Producto 3-2">
-                        <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p3_3.PNG" alt="Producto 3-3">
-                    </div>
-                    <button class="slider-button slider-button-prev">Anterior</button>
-                    <button class="slider-button slider-button-next">Siguiente</button>
-                </div>
-                <h2>Producto 3</h2>
-                <p>Descripción del Producto 3.</p>
-                <p>Precio: $10</p>
-                <a href="producto3.html">Ver detalles</a>
-            </div>
-
-
-    <div class="product-container">
-                <div class="decoracion">
-                    <div class="slider-container">
-                        <div class="slider">
-                            <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p4_1.PNG" alt="Producto 4">
-                            <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p4_2.PNG" alt="Producto 4-2">
-                            <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p4_3.PNG" alt="Producto 4-3">
-                        </div>
-                        <button class="slider-button slider-button-prev">Anterior</button>
-                        <button class="slider-button slider-button-next">Siguiente</button>
-                    </div>
-                    <h2>Producto 4</h2>
-                    <p>Descripción del Producto 4.</p>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p1_1.PNG" alt="Producto 1" class="img-fluid product-image">
+                    <h3>Producto 1</h3>
+                    <p>Descripción del Producto 1.</p>
                     <p>Precio: $10</p>
-                    <a href="producto4.html">Ver detalles</a>
+                    <a href="producto1.html">Ver detalles</a>
                 </div>
-
-    <div class="product-container">
-             <div class="decoracion">
-                <div class="slider-container">
-                     <div class="slider">
-                                <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p5_1.JPG" alt="Producto 5">
-                                <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p5_2.JPG" alt="Producto 5-2">
-                                <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p5_3.JPG" alt="Producto 5-3">
-                     </div>
-                            <button class="slider-button slider-button-prev">Anterior</button>
-                            <button class="slider-button slider-button-next">Siguiente</button>
-                </div>
-                 <h2>Producto 5</h2>
-                  <p>Descripción del Producto 5.</p>
-                 <p>Precio: $10</p>
-                 <a href="producto5.html">Ver detalles</a>
             </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p2_1.PNG" alt="Producto 2" class="img-fluid product-image">
+                    <h3>Producto 2</h3>
+                    <p>Descripción del Producto 2.</p>
+                    <p>Precio: $20</p>
+                    <a href="producto1.html">Ver detalles</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p3_1.PNG" alt="Producto 3" class="img-fluid product-image">
+                    <h3>Producto 3</h3>
+                    <p>Descripción del Producto 3.</p>
+                    <p>Precio: $30</p>
+                    <a href="producto1.html">Ver detalles</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p1_1.PNG" alt="Producto 1" class="img-fluid product-image">
+                    <h3>Producto 1</h3>
+                    <p>Descripción del Producto 1.</p>
+                    <p>Precio: $10</p>
+                    <a href="producto1.html">Ver detalles</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p2_1.PNG" alt="Producto 2" class="img-fluid product-image">
+                    <h3>Producto 2</h3>
+                    <p>Descripción del Producto 2.</p>
+                    <p>Precio: $20</p>
+                    <a href="producto1.html">Ver detalles</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="/Productos/Saved Pictures/Decoracion/Esculturas/p3_1.PNG" alt="Producto 3" class="img-fluid product-image">
+                    <h3>Producto 3</h3>
+                    <p>Descripción del Producto 3.</p>
+                    <p>Precio: $30</p>
+                    <a href="producto1.html">Ver detalles</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p1_1.JPG" alt="Producto 6">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p1_2.JPG" alt="Producto 6-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p1_3.JPG" alt="Producto 6-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 6</h2>
-             <p>Descripción del Producto 6.</p>
-            <p>Precio: $10</p>
-            <a href="producto6.html">Ver detalles</a>
-       </div>
-
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p2_1.JPG" alt="Producto 7">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p2_2.JPG" alt="Producto 7-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p2_3.JPG" alt="Producto 7-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 7</h2>
-             <p>Descripción del Producto 7.</p>
-            <p>Precio: $10</p>
-            <a href="producto7.html">Ver detalles</a>
-       </div>
-
-
-       <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p3_1.JPG" alt="Producto 8">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p3_2.JPG" alt="Producto 8-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p3_3.JPG" alt="Producto 8-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 8</h2>
-             <p>Descripción del Producto 8.</p>
-            <p>Precio: $10</p>
-            <a href="producto8.html">Ver detalles</a>
-       </div>
-
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p4_1.JPG" alt="Producto 9">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p4_2.JPG" alt="Producto 9-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p4_3.JPG" alt="Producto 9-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 9</h2>
-             <p>Descripción del Producto 9.</p>
-            <p>Precio: $10</p>
-            <a href="producto9.html">Ver detalles</a>
-       </div>
-
-   <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p5_1.JPG" alt="Producto 10">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p5_2.JPG" alt="Producto 10-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/De Temorada/p5_3.JPG" alt="Producto 10-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 10</h2>
-             <p>Descripción del Producto 10.</p>
-            <p>Precio: $10</p>
-            <a href="producto10.html">Ver detalles</a>
-       </div>
-
-    
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p1_1.JPG" alt="Producto 11">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p1_2.JPG" alt="Producto 11-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p1_3.JPG" alt="Producto 11-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 11</h2>
-             <p>Descripción del Producto 11.</p>
-            <p>Precio: $10</p>
-            <a href="producto11.html">Ver detalles</a>
-       </div>
-
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p2_1.JPG" alt="Producto 12">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p2_2.JPG" alt="Producto 12-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p2_3.JPG" alt="Producto 12-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 12</h2>
-             <p>Descripción del Producto 12.</p>
-            <p>Precio: $10</p>
-            <a href="producto12.html">Ver detalles</a>
-       </div>
-
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p3_1.JPG" alt="Producto 13">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p3_2.JPG" alt="Producto 13-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p3_3.JPG" alt="Producto 13-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 13</h2>
-             <p>Descripción del Producto 13.</p>
-            <p>Precio: $10</p>
-            <a href="producto13.html">Ver detalles</a>
-       </div>
-
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p4_1.JPG" alt="Producto 14">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p4_2.JPG" alt="Producto 14-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p4_3.JPG" alt="Producto 14-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 14</h2>
-             <p>Descripción del Producto 14.</p>
-            <p>Precio: $10</p>
-            <a href="producto14.html">Ver detalles</a>
-       </div>
-
-    <div class="product-container">
-        <div class="decoracion">
-           <div class="slider-container">
-                <div class="slider">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p5_1.JPG" alt="Producto 15">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p5_2.JPG" alt="Producto 15-2">
-                           <img src="/Productos/Saved Pictures/Decoracion/Luces/p5_3.JPG" alt="Producto 15-3">
-                </div>
-                       <button class="slider-button slider-button-prev">Anterior</button>
-                       <button class="slider-button slider-button-next">Siguiente</button>
-           </div>
-            <h2>Producto 15</h2>
-             <p>Descripción del Producto 15.</p>
-            <p>Precio: $10</p>
-            <a href="producto15.html">Ver detalles</a>
-       </div>
-</div>
+    <!-- Agrega los scripts de Bootstrap al final del documento -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
