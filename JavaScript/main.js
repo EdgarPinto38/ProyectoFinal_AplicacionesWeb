@@ -2,6 +2,8 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.5.2/fi
 import { auth } from './firebase.js'
 import { loginCheck } from './loginCheck.js'
 import './signupForm.js'
+import './signinForm.js'
+import './googleLogin.js'
 import './logout.js'
 
 
