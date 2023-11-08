@@ -21,6 +21,7 @@ document.getElementById('googleLogin').addEventListener('click', async function 
 
   } catch (error) {
     console.log(error);
+    showMessage("Something went wrong", "error")
   }
 });
 

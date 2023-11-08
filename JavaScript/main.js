@@ -5,6 +5,7 @@ import './signupForm.js'
 import './signinForm.js'
 import './googleLogin.js'
 import './logout.js'
+import './updatePassword.js'
 
 
 onAuthStateChanged(auth, async (user) =>{

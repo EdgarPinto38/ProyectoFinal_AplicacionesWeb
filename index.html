@@ -102,12 +102,27 @@
                 required
               />
 
-              <button type="submit" class="btn btn-success w-100 mb-4">Log in</button>
+              <button type="submit" class="btn btn-success w-100 mb-4">
+                Log in
+              </button>
             </form>
 
-            <button type="button" id="googleLogin" class="btn btn-info w-100 mb-4 ">
+            <button
+              type="button"
+              id="googleLogin"
+              class="btn btn-info w-100 mb-4"
+            >
               Google
             </button>
+            <div class="container text-center">
+              <a href="" class="" id="forgot-link"
+                >Did you forget the password?</a
+              >
+              <br />
+              <a href="" class=""
+                >You still do not have an account?</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -160,6 +175,57 @@
       </div>
     </div>
     <!-- Termina Modal de Sign Up -->
+
+
+    <!-- Modal de Forgot Password -->
+    <div
+      class="modal fade"
+      id="forgotModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="forgot-form">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="forgot-email"
+                placeholder="Email"
+                required
+              />
+
+              <label for="password">New Password:</label>
+              <input
+                type="password"
+                class="form-control mb-3"
+                id="forgot-password"
+                placeholder="******"
+                required
+              />
+
+              <button type="submit" class="btn btn-success w-100 mb-4">
+                Update
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Termina Modal de Forgot Password -->
 
     <!-- Main js -->
     <script src="./JavaScript/main.js" type="module"></script>
