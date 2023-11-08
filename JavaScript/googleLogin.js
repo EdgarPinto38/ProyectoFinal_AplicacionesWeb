@@ -14,11 +14,11 @@ document.getElementById('googleLogin').addEventListener('click', async function 
     console.log("google sign in");
     
     // Close the login modal
-    const modalInstance = bootstrap.Modal.getInstance(document.querySelector('signinModal'));
+    const modal = bootstrap.Modal.getInstance(document.querySelector('#signinModal'));
     modal.hide()
-
     // show welcome message
     showMessage("Welcome " + credentials.user.displayName,'success');
+
   } catch (error) {
     console.log(error);
   }
