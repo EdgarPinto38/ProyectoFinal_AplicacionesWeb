@@ -17,7 +17,7 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-60%, -60%);
       padding: 20px;
       background-color: #fff;
       border: 1px solid #ccc;
@@ -34,59 +34,66 @@
       height: auto;
     }
 
-    .producto-container button {
-      margin-top: 10px;
-    }
+    .button-container {
+    margin-top: 25px;
+  }
+
+  .button-container button {
+    margin: 0 auto;
+    display: block;
+  }
   </style>
 </head>
 <body>
 
-  <!-- Empieza la nav bar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">VerdeVida</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item logged-out">
-            <a
-              class="nav-link"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#signinModal"
-              >Sign In</a
-            >
-          </li>
-          <li class="nav-item logged-out">
-            <a
-              class="nav-link"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#signupModal"
-              >Sign Up</a
-            >
-          </li>
-          <li class="nav-item logged-in">
-            <a class="nav-link" href="#" id="logout">Log Out</a>
-          </li>
-        </ul>
+     <!-- Empieza la nav bar -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VerdeVida</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item logged-out">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#signinModal"
+                >Sign In</a
+              >
+            </li>
+            <li class="nav-item logged-out">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+                >Sign Up</a
+              >
+            </li>
+            <li class="nav-item logged-in">
+              <a class="nav-link" href="#" id="logout">Log Out</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+    <!-- termina la nav bar. -->
+
 
   <h1>Catálogo de Productos</h1>
 
-  <div id="catalogo"></div>
+  <div id="catalogo" class="row"></div>
 
   <div id="popup" class="popup">
     <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -100,12 +107,21 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <div id="detallesContainer">
+      <h3>Detalles del Producto</h3>
+      <p id="detallesTexto"></p>
+    </div>
+    <h3>Precio</h3>
+    <p id="precioTexto"></p>
+
+    <h3>Descripción</h3>
+    <p id="descripcionTexto"></p>
+  </div>
+
     <button id="cerrarPopup" class="btn btn-danger">Cerrar</button>
   </div>
 
   <script>
-
-
     // Llamada al archivo JSON
     let productos;
 
@@ -130,12 +146,18 @@
     function mostrarPopup(id) {
       const popupDiv = document.getElementById('popup');
       const carouselInner = document.getElementById('carouselInner');
+      const detallesTexto = document.getElementById('detallesTexto');
+      const precioTexto = document.getElementById('precioTexto');
+      const descripcionTexto = document.getElementById('descripcionTexto');
 
       // Puedes personalizar esto para obtener información específica del producto
       const producto = obtenerProductoPorId(id);
-
+      
       // Limpiar el contenido previo del carrusel
       carouselInner.innerHTML = '';
+      detallesTexto.innerHTML = '';
+      precioTexto.innerHTML = '';
+      descripcionTexto.innerHTML = '';
 
       // Agregar imágenes al carrusel
       producto.imagenes.forEach((imagen, index) => {
@@ -146,8 +168,11 @@
           </div>
         `;
       });
-
+      detallesTexto.textContent = producto.detalles;
+      precioTexto.textContent = `$${producto.precio.toFixed(2)}`; // Formatear el precio
+     descripcionTexto.textContent = producto.descripcion;
       // Mostrar el popup
+
       popupDiv.style.display = 'block';
     }
 
@@ -170,6 +195,16 @@
       document.getElementById('popup').style.display = 'none';
     });
   </script>
+
+  <!-- Main js -->
+  <script src="./JavaScript/main.js" type="module"></script>
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Toastify js -->
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/toastify-js"
+></script>
 
 </body>
 </html>
