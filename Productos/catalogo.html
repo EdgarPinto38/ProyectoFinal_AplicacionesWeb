@@ -8,9 +8,7 @@
   <!-- Agrega los estilos y scripts de Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-  <!-- Bootstrap CSS -->
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <style>
     .popup {
@@ -18,30 +16,35 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-60%, -60%);
+      transform: translate(-50%, -50%);
       padding: 20px;
-      background-color: #fff;
+      background-color: #ece2e2;
       border: 1px solid #ccc;
       z-index: 1;
     }
 
     .producto-container {
-      text-align: center;
-      margin-bottom: 20px;
+    text-align:center;
+    margin-bottom: 35px;
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    font-size:small !important;
     }
 
     .producto-container img {
-      max-width: 25%; 
+      max-width: 30%; 
       height: auto;
     }
 
     .button-container {
-    margin-top: 25px;
+    margin-top: 60px;
   }
 
   .button-container button {
-    margin: 0 auto;
+    margin: 2 auto;
     display: block;
+    background-color: #14ac37 !important;
   }
   </style>
 </head>
@@ -58,8 +61,7 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -88,7 +90,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+     </nav>
     <!-- termina la nav bar. -->
 
 
@@ -96,31 +98,30 @@
 
   <div id="catalogo" class="row"></div>
 
+   <!-- Empieza el Carousel -->
   <div id="popup" class="popup">
     <div id="carouselExample" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" id="carouselInner"></div>
-      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span></a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span></a>
     </div>
+     <!-- Termina el Carousel -->
     <div id="detallesContainer">
       <h3>Detalles del Producto</h3>
       <p id="detallesTexto"></p>
     </div>
     <h3>Precio</h3>
     <p id="precioTexto"></p>
-
     <h3>Descripción</h3>
     <p id="descripcionTexto"></p>
-  </div>
-
     <button id="cerrarPopup" class="btn btn-danger">Cerrar</button>
   </div>
+
+ 
 
   <script>
     // Llamada al archivo JSON
@@ -136,24 +137,22 @@
             <div class="producto-container">
               <h2>${producto.nombre}</h2>
               <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid">
-              <button class="btn btn-primary" onclick="mostrarPopup(${producto.id})">Ver más</button>
+              <button class="btn btn-primary" onclick= "mostrarPopup(${producto.id})">Ver más</button>
             </div>
           `;
         });
       })
       .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
-    // Función para mostrar el popup con más información
-    function mostrarPopup(id) {
+      // Función para mostrar el popup con más información
+      function mostrarPopup(id) {
       const popupDiv = document.getElementById('popup');
       const carouselInner = document.getElementById('carouselInner');
       const detallesTexto = document.getElementById('detallesTexto');
       const precioTexto = document.getElementById('precioTexto');
       const descripcionTexto = document.getElementById('descripcionTexto');
-
-      // Puedes personalizar esto para obtener información específica del producto
       const producto = obtenerProductoPorId(id);
-      
+         
       // Limpiar el contenido previo del carrusel
       carouselInner.innerHTML = '';
       detallesTexto.innerHTML = '';
@@ -171,28 +170,25 @@
       });
       detallesTexto.textContent = producto.detalles;
       precioTexto.textContent = `$${producto.precio.toFixed(2)}`; // Formatear el precio
-     descripcionTexto.textContent = producto.descripcion;
+      descripcionTexto.textContent = producto.descripcion;
       // Mostrar el popup
-
       popupDiv.style.display = 'block';
     }
 
-    // Función para obtener el producto por su ID (simulación)
-    function obtenerProductoPorId(id) {
+      // Función para obtener el producto por su ID
+       function obtenerProductoPorId(id) {
       // Buscar el producto en el array de productos por su ID
       const productoEncontrado = productos.find(producto => producto.id === id);
-
       // Verificar si se encontró el producto
       if (productoEncontrado) {
         return productoEncontrado;
       } else {
         console.error('Producto no encontrado');
-        return null; // Otra opción es devolver un objeto vacío o algo que indique que el producto no se encontró
+        return null;
       }
     }
-
     // Cerrar el popup al hacer clic en el botón "Cerrar"
-    document.getElementById('cerrarPopup').addEventListener('click', function() {
+      document.getElementById('cerrarPopup').addEventListener('click', function() {
       document.getElementById('popup').style.display = 'none';
     });
   </script>
@@ -202,11 +198,7 @@
   <!-- Bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Toastify js -->
-  <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/toastify-js"
-></script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
 
