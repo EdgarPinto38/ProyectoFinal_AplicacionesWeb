@@ -95,8 +95,13 @@
      </nav>
     <!-- termina la nav bar. -->
 
-
-  <h1>Catálogo de Productos</h1>
+    <div id="filtroCategorias">
+      <button class="btn btn-success" onclick="filtrarPorCategoria(null)">Todos</button>
+      <button class="btn btn-primary" onclick="filtrarPorCategoria('Decoracion')">Decoracion</button>
+      <button class="btn btn-primary" onclick="filtrarPorCategoria('Herramientas')">Herramientas</button>
+      <button class="btn btn-primary" onclick="filtrarPorCategoria('Macetas')">Macetas</button>
+      <!-- Otros botones de categoría... -->
+    </div>
 
   <div id="catalogo" class="row"></div>
 
@@ -144,26 +149,31 @@
       })
       .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
-    function mostrarProductos(pagina) {
-      const catalogoDiv = document.getElementById('catalogo');
-      catalogoDiv.innerHTML = '';
+      function mostrarProductos(pagina, categoriaFiltro = null) {
+  const catalogoDiv = document.getElementById('catalogo');
+  catalogoDiv.innerHTML = '';
 
-      const inicio = (pagina - 1) * productosPorPagina;
-      const fin = inicio + productosPorPagina;
-      const productosPagina = productos.slice(inicio, fin);
+  const inicio = (pagina - 1) * productosPorPagina;
+  const fin = inicio + productosPorPagina;
+  let productosFiltrados = productos.slice(inicio, fin);
 
-      productosPagina.forEach(producto => {
-        catalogoDiv.innerHTML += `
-          <div class="producto-container">
-            <h2>${producto.nombre}</h2>
-            <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid">
-            <br> 
-            <br>
-            <button class="btn btn-success" onclick="mostrarPopup(${producto.id})">Ver más</button>
-          </div>
-        `;
-      });
-    }
+  // Filtrar por categoría si se proporciona
+  if (categoriaFiltro) {
+    productosFiltrados = productosFiltrados.filter(producto => producto.categoria === categoriaFiltro);
+  }
+
+  productosFiltrados.forEach(producto => {
+    catalogoDiv.innerHTML += `
+      <div class="producto-container">
+        <h2>${producto.nombre}</h2>
+        <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid">
+        <br> 
+        <br>
+        <button class="btn btn-success" onclick="mostrarPopup(${producto.id})">Ver más</button>
+      </div>
+    `;
+  });
+}
 
     function mostrarPaginacion() {
       const totalPaginas = Math.ceil(productos.length / productosPorPagina);
@@ -184,6 +194,11 @@
         paginationUl.appendChild(li);
       }
     }
+
+    function filtrarPorCategoria(categoria) {
+  mostrarProductos(paginaActual, categoria);
+  mostrarPaginacion(); // Actualizar paginación después de aplicar el filtro
+}
 
       // Función para mostrar el popup con más información
       function mostrarPopup(id) {
