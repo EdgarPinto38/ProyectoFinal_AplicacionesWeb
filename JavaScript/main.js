@@ -13,7 +13,9 @@ onAuthStateChanged(auth, async (user) =>{
 
     if(user){
         loginCheck(user)
+        console.log(user)
     } else {
         loginCheck(user)
+        console.log(user)
     }
 })
