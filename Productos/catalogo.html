@@ -100,6 +100,11 @@
 
   <div id="catalogo" class="row"></div>
 
+  <!-- Paginación de Bootstrap -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" id="pagination"></ul>
+  </nav>
+
    <!-- Empieza el Carousel -->
   <div id="popup" class="popup">
     <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -126,27 +131,59 @@
   </div>
 
   <script>
-    // Llamada al archivo JSON
-    let productos;
+   let productos;
+    const productosPorPagina = 9;
+    let paginaActual = 1;
 
     fetch('productos.json')
       .then(response => response.json())
       .then(data => {
         productos = data;
-        const catalogoDiv = document.getElementById('catalogo');
-        data.forEach(producto => {
-          catalogoDiv.innerHTML += `
-            <div class="producto-container">
-              <h2>${producto.nombre}</h2>
-              <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid">
-              <br> 
-              <br>
-              <button class="btn btn-success" onclick= "mostrarPopup(${producto.id})">Ver más</button>
-            </div>
-          `;
-        });
+        mostrarProductos(paginaActual);
+        mostrarPaginacion();
       })
       .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
+    function mostrarProductos(pagina) {
+      const catalogoDiv = document.getElementById('catalogo');
+      catalogoDiv.innerHTML = '';
+
+      const inicio = (pagina - 1) * productosPorPagina;
+      const fin = inicio + productosPorPagina;
+      const productosPagina = productos.slice(inicio, fin);
+
+      productosPagina.forEach(producto => {
+        catalogoDiv.innerHTML += `
+          <div class="producto-container">
+            <h2>${producto.nombre}</h2>
+            <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid">
+            <br> 
+            <br>
+            <button class="btn btn-success" onclick="mostrarPopup(${producto.id})">Ver más</button>
+          </div>
+        `;
+      });
+    }
+
+    function mostrarPaginacion() {
+      const totalPaginas = Math.ceil(productos.length / productosPorPagina);
+      const paginationUl = document.getElementById('pagination');
+      paginationUl.innerHTML = '';
+
+      for (let i = 1; i <= totalPaginas; i++) {
+        const li = document.createElement('li');
+        li.classList.add('page-item');
+        const a = document.createElement('a');
+        a.classList.add('page-link');
+        a.href = '#';
+        a.textContent = i;
+        a.addEventListener('click', function() {
+          cambiarPagina(i);
+        });
+        li.appendChild(a);
+        paginationUl.appendChild(li);
+      }
+    }
 
       // Función para mostrar el popup con más información
       function mostrarPopup(id) {
@@ -191,6 +228,13 @@
         return null;
       }
     }
+
+    function cambiarPagina(pagina) {
+      paginaActual = pagina;
+      mostrarProductos(pagina);
+    } 
+
+
     // Cerrar el popup al hacer clic en el botón "Cerrar"
       document.getElementById('cerrarPopup').addEventListener('click', function() {
       document.getElementById('popup').style.display = 'none';
