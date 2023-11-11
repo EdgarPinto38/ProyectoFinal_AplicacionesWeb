@@ -1,6 +1,7 @@
 [
     {
       "id": 1,
+      "categoria": "Decoracion",
       "nombre": "Macetero De Cerámica Con Animales",
       "descripcion": "Descripción del Producto 1",
       "precio": 130,
@@ -10,10 +11,11 @@
         "/Productos/Saved Pictures/Decoracion/Esculturas/p1_1.PNG",
         "/Productos/Saved Pictures/Decoracion/Esculturas/p1_2.PNG",
         "/Productos/Saved Pictures/Decoracion/Esculturas/p1_3.PNG"
-      ]
+      ]    
     },
     {
       "id": 2,
+      "categoria": "Decoracion",
       "nombre": " Decoración De Jardinería",
       "descripcion": "Descripción del Producto 1",
       "precio": 200,
@@ -27,6 +29,7 @@
     },
     {
       "id": 3,
+      "categoria": "Decoracion",
       "nombre": "Mini Jarrón De Cerámica",
       "descripcion": "Descripción del Producto 1",
       "precio": 105,
@@ -40,6 +43,7 @@
     },
     {
       "id": 4,
+      "categoria": "Decoracion",
       "nombre": "Extraterrestre Diseño Brillante",
       "descripcion": "Descripción del Producto 1",
       "precio": 105,
@@ -53,6 +57,7 @@
     },
     {
       "id": 5,
+      "categoria": "Decoracion",
       "nombre": "Extraterrestre Diseño Brillante",
       "descripcion": "Descripción del Producto 1",
       "precio": 110,
@@ -66,6 +71,7 @@
     },
     {
       "id": 6,
+      "categoria": "Decoracion",
       "nombre": "Artificial árbol",
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
@@ -79,6 +85,7 @@
     },
     {
       "id": 7,
+      "categoria": "Decoracion",
       "nombre": "Navidad rojo bayas",
       "descripcion": "Descripción del Producto 1",
       "precio": 65,
@@ -92,6 +99,7 @@
     },
     {
       "id": 8,
+      "categoria": "Decoracion",
       "nombre": "Tren De Navidad",
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
@@ -105,6 +113,7 @@
     },
     {
       "id": 9,
+      "categoria": "Decoracion",
       "nombre": "Cadena de luces LED",
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
@@ -118,6 +127,7 @@
     },
     {
       "id": 10,
+      "categoria": "Decoracion",
       "nombre": "Luz solar de cadena",
       "descripcion": "Descripción del Producto 1",
       "precio": 185,
@@ -131,6 +141,7 @@
     },
     {
       "id": 11,
+      "categoria": "Decoracion",
       "nombre": "Luz de antorcha",
       "descripcion": "Descripción del Producto 1",
       "precio": 300,
@@ -144,6 +155,7 @@
     },
     {
       "id": 12,
+      "categoria": "Decoracion",
       "nombre": "Decoración de linterna negra",
       "descripcion": "Descripción del Producto 1",
       "precio": 105,
@@ -157,6 +169,7 @@
     },
     {
       "id": 13,
+      "categoria": "Herramientas",
       "nombre": "Guantes de jardín con garras",
       "descripcion": "Descripción del Producto 1",
       "precio": 90,
@@ -170,6 +183,7 @@
     },
     {
       "id": 14,
+      "categoria": "Herramientas",
       "nombre": "Guantes De Trabajo",
       "descripcion": "Descripción del Producto 1",
       "precio": 265,
@@ -183,6 +197,7 @@
     },
     {
       "id": 15,
+      "categoria": "Herramientas",
       "nombre": "Guantes De Trabajo De Cuero",
       "descripcion": "Descripción del Producto 1",
       "precio": 190,
@@ -196,6 +211,7 @@
     },
     {
       "id": 16,
+      "categoria": "Herramientas",
       "nombre": "Manguera De Jardín Azul",
       "descripcion": "Descripción del Producto 1",
       "precio": 270,
@@ -209,6 +225,7 @@
     },
     {
       "id": 17,
+      "categoria": "Herramientas",
       "nombre": "Manguera De Agua De Limpieza",
       "descripcion": "Descripción del Producto 1",
       "precio": 900,
@@ -222,6 +239,7 @@
     },
     {
       "id": 18,
+      "categoria": "Herramientas",
       "nombre": "360 grados automático giratorio",
       "descripcion": "Descripción del Producto 1",
       "precio": 180,
@@ -235,6 +253,7 @@
     },
     {
       "id": 19,
+      "categoria": "Herramientas",
       "nombre": "Pala de jardinería con unicolor",
       "descripcion": "Descripción del Producto 1",
       "precio": 65,
@@ -248,6 +267,7 @@
     },
     {
       "id": 20,
+      "categoria": "Herramientas",
       "nombre": "Conjunto De Herramientas De Jardinería",
       "descripcion": "Descripción del Producto 1",
       "precio": 60,
@@ -261,6 +281,7 @@
     },
     {
       "id": 21,
+      "categoria": "Herramientas",
       "nombre": "Pala Tactica Multifuncional",
       "descripcion": "Descripción del Producto 1",
       "precio": 215,
@@ -274,6 +295,7 @@
     },
     {
       "id": 22,
+      "categoria": "Herramientas",
       "nombre": "De Regadera Con Cabezal",
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
@@ -287,6 +309,7 @@
     },
     {
       "id": 23,
+      "categoria": "Herramientas",
       "nombre": "Regadera diseño de caracol",
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
@@ -300,6 +323,7 @@
     },
     {
       "id": 24,
+      "categoria": "Herramientas",
       "nombre": "Regadera Creativa De Plástico",
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
@@ -313,6 +337,7 @@
     },
     {
       "id": 24,
+      "categoria": "Herramientas",
       "nombre": "Dispositivo de riego automático",
       "descripcion": "Descripción del Producto 1",
       "precio": 100,
@@ -326,6 +351,7 @@
     },
     {
       "id": 25,
+      "categoria": "Herramientas",
       "nombre": "Auto Riego En Forma De Pájaro",
       "descripcion": "Descripción del Producto 1",
       "precio": 100,
@@ -339,6 +365,7 @@
     },
     {
       "id": 26,
+      "categoria": "Herramientas",
       "nombre": "Riego de plantas con diseño de pájar",
       "descripcion": "Descripción del Producto 1",
       "precio": 90,
@@ -352,6 +379,7 @@
     },
     {
       "id": 27,
+      "categoria": "Herramientas",
       "nombre": "Tijeras De Podar",
       "descripcion": "Descripción del Producto 1",
       "precio": 100,
@@ -365,6 +393,7 @@
     },
     {
       "id": 28,
+      "categoria": "Herramientas",
       "nombre": "Tijeras de jardín",
       "descripcion": "Descripción del Producto 1",
       "precio": 75,
@@ -378,6 +407,7 @@
     },
     {
       "id": 29,
+      "categoria": "Herramientas",
       "nombre": "Tijeras De Podar De Rama",
       "descripcion": "Descripción del Producto 1",
       "precio": 135,
@@ -391,6 +421,7 @@
     },
     {
       "id": 30,
+      "categoria": "Macetas",
       "nombre": "Mini Macetas",
       "descripcion": "Descripción del Producto 1",
       "precio": 870,
@@ -404,6 +435,7 @@
     },
     {
       "id": 31,
+      "categoria": "Macetas",
       "nombre": "Maceta De Cerámica Con Forma De Hongo",
       "descripcion": "Descripción del Producto 1",
       "precio": 180,
@@ -417,6 +449,7 @@
     },
     {
       "id": 32,
+      "categoria": "Macetas",
       "nombre": "Maceta de brotes de flores",
       "descripcion": "Descripción del Producto 1",
       "precio": 190,
@@ -430,6 +463,7 @@
     },
     {
       "id": 33,
+      "categoria": "Macetas",
       "nombre": "Maceta minimalista de rayas",
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
@@ -443,6 +477,7 @@
     },
     {
       "id": 34,
+      "categoria": "Macetas",
       "nombre": "Maceta de plastico resistente",
       "descripcion": "Descripción del Producto 1",
       "precio": 150,
@@ -456,6 +491,7 @@
     },
     {
       "id": 35,
+      "categoria": "Macetas",
       "nombre": "Maceta De Resina De Gran Tamaño",
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
@@ -469,6 +505,7 @@
     },
     {
       "id": 36,
+      "categoria": "Macetas",
       "nombre": "Imitación cerámico decorativo",
       "descripcion": "Descripción del Producto 1",
       "precio": 70,
@@ -482,6 +519,7 @@
     },
     {
       "id": 37,
+      "categoria": "Macetas",
       "nombre": "Macetas de Vivero",
       "descripcion": "Descripción del Producto 1",
       "precio": 200,
@@ -495,6 +533,7 @@
     },
     {
       "id": 38,
+      "categoria": "Macetas",
       "nombre": "Maceta de vivero unicolor",
       "descripcion": "Descripción del Producto 1",
       "precio": 65,
@@ -508,6 +547,7 @@
     },
     {
       "id": 39,
+      "categoria": "Macetas",
       "nombre": "Olla con Bandeja",
       "descripcion": "Descripción del Producto 1",
       "precio": 60,
@@ -521,6 +561,7 @@
     },
     {
       "id": 40,
+      "categoria": "Macetas",
       "nombre": "Maceta de vivero imitación barro",
       "descripcion": "Descripción del Producto 1",
       "precio": 145,
@@ -534,6 +575,7 @@
     },
     {
       "id": 41,
+      "categoria": "Macetas",
       "nombre": "Juego De Estaciones",
       "descripcion": "Descripción del Producto 1",
       "precio": 250,
@@ -547,6 +589,7 @@
     },
     {
       "id": 42,
+      "categoria": "Macetas",
       "nombre": "Florero Creativo Con Soporte De Madera",
       "descripcion": "Descripción del Producto 1",
       "precio": 200,
@@ -560,6 +603,7 @@
     },
     {
       "id": 43,
+      "categoria": "Macetas",
       "nombre": "Jarrón Plástico Blanco",
       "descripcion": "Descripción del Producto 1",
       "precio": 300,
@@ -573,6 +617,7 @@
     },
     {
       "id": 44,
+      "categoria": "Macetas",
       "nombre": "Macetero de terrarios",
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
@@ -586,6 +631,7 @@
     },
     {
       "id": 45,
+      "categoria": "Macetas",
       "nombre": "Clip de fijación para pared",
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
