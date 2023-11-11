@@ -195,6 +195,29 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
+// Función para agregar un producto al carrito
+function agregarAlCarrito(producto) {
+    // Obtener el carrito actual del almacenamiento local
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    // Agregar el nuevo producto al carrito
+    carrito.push(producto);
+
+    // Guardar el carrito actualizado en el almacenamiento local
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+// Función para obtener el contenido del carrito
+function obtenerCarrito() {
+    return JSON.parse(localStorage.getItem('carrito')) || [];
+}
+
+// Llamada de ejemplo para agregar un producto al carrito
+agregarAlCarrito({ id: 1, nombre: 'Ejemplo', precio: 19.99 });
+
+// Llamada de ejemplo para obtener el contenido del carrito
+const contenidoCarrito = obtenerCarrito();
+console.log(contenidoCarrito);
 
 
 
