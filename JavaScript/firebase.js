@@ -12,11 +12,11 @@ const firebaseConfig = {
     storageBucket: "tiendaplantas-cf8bf.appspot.com",
     messagingSenderId: "613046897699",
     appId: "1:613046897699:web:cf02b294bacca1dad53596",
-    databaseURL:"https://tiendaplantas-cf8bf-default-rtdb.firebaseio.com/"
+   // databaseURL:"https://tiendaplantas-cf8bf-default-rtdb.firebaseio.com/"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app)
 
-import {getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"
+//import {getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"
