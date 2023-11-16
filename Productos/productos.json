@@ -6,11 +6,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 130,
       "detalles": "Color: Multicolor, Tamaño: Pequeño, Material: Vidrio",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Esculturas/p1_1.PNG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Esculturas/p1_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p1_1.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p1_2.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p1_3.PNG"
+        "/Productos/SavedPictures/Decoracion/Esculturas/p1_1.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p1_2.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p1_3.PNG"
       ]    
     },
     {
@@ -20,11 +20,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 200,
       "detalles": "Color: Blanco, Material: ABS",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Esculturas/p2_1.PNG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Esculturas/p2_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p2_1.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p2_2.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p2_3.PNG"
+        "/Productos/SavedPictures/Decoracion/Esculturas/p2_1.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p2_2.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p2_3.PNG"
       ]
     },
     {
@@ -34,11 +34,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 105,
       "detalles": "Color:Verde cobre, Material: Porcelana china",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Esculturas/p3_1.PNG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Esculturas/p3_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p3_1.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p3_2.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p3_3.PNG"
+        "/Productos/SavedPictures/Decoracion/Esculturas/p3_1.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p3_2.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p3_3.PNG"
       ]
     },
     {
@@ -48,11 +48,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 105,
       "detalles": "Color: Multicolor, Material: ABS",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Esculturas/p4_1.PNG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Esculturas/p4_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p4_1.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p4_2.PNG",
-        "/Productos/Saved Pictures/Decoracion/Esculturas/p4_3.PNG"
+        "/Productos/SavedPictures/Decoracion/Esculturas/p4_1.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p4_2.PNG",
+        "/Productos/SavedPictures/Decoracion/Esculturas/p4_3.PNG"
       ]
     },
     {
@@ -62,11 +62,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 110,
       "detalles": "Color:Multicolor, Material:Poliamida",
-      "imagen": "/Productos/Saved Pictures/Decoracion/DeTemorada/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Decoracion/DeTemorada/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p1_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p1_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p1_3.JPG"
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p1_1.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p1_2.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p1_3.JPG"
       ]
     },
     {
@@ -76,11 +76,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
       "detalles": "Color:Multicolor, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Decoracion/DeTemorada/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Decoracion/DeTemorada/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p2_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p1_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p2_3.JPG"
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p2_1.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p1_2.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p2_3.JPG"
       ]
     },
     {
@@ -90,11 +90,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 65,
       "detalles": "Color:Rojo, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Decoracion/DeTemorada/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Decoracion/DeTemorada/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p3_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p3_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p3_3.JPG"
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p3_1.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p3_2.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p3_3.JPG"
       ]
     },
     {
@@ -106,9 +106,9 @@
       "detalles": "Fuente de alimentación:Ninguno, Color:Multicolor",
       "imagen": "/Productos/Saved Pictures/Decoracion/DeTemorada/p4_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p4_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p4_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/DeTemorada/p4_3.JPG"
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p4_1.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p4_2.JPG",
+        "/Productos/SavedPictures/Decoracion/DeTemorada/p4_3.JPG"
       ]
     },
     {
@@ -120,9 +120,9 @@
       "detalles": "Fuente de alimentación:Funciona a Pilas, Material:Plástico",
       "imagen": "/Productos/Saved Pictures/Decoracion/Luces/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Luces/p1_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p1_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p1_3.JPG"
+        "/Productos/SavedPictures/Decoracion/Luces/p1_1.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p1_2.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p1_3.JPG"
       ]
     },
     {
@@ -132,11 +132,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 185,
       "detalles": "Color:Amarillo, Fuente de alimentación:Energía solar",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Luces/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Luces/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Luces/p2_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p2_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p2_3.JPG"
+        "/Productos/SavedPictures/Decoracion/Luces/p2_1.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p2_2.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p2_3.JPG"
       ]
     },
     {
@@ -146,11 +146,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 300,
       "detalles": "Fuente de alimentación:Cable de Alimentación USB, Material:ABS",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Luces/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Luces/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Luces/p3_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p3_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p3_3.JPG"
+        "/Productos/SavedPictures/Decoracion/Luces/p3_1.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p3_2.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p3_3.JPG"
       ]
     },
     {
@@ -160,11 +160,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 105,
       "detalles": "Color:Amarillo, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Decoracion/Luces/p4_1.JPG",
+      "imagen": "/Productos/SavedPictures/Decoracion/Luces/p4_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Decoracion/Luces/p4_1.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p4_2.JPG",
-        "/Productos/Saved Pictures/Decoracion/Luces/p4_3.JPG"
+        "/Productos/SavedPictures/Decoracion/Luces/p4_1.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p4_2.JPG",
+        "/Productos/SavedPictures/Decoracion/Luces/p4_3.JPG"
       ]
     },
     {
@@ -174,11 +174,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 90,
       "detalles": "Color:Verde, Material:Poliéster",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Guantes/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Guantes/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Guantes/p1_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Guantes/p1_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Guantes/p1_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Guantes/p1_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Guantes/p1_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Guantes/p1_3.JPG"
       ]
     },
     {
@@ -188,11 +188,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 265,
       "detalles": "Color:Rosa, Material:Cuero de microfibra",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Guantes/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Guantes/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Guantes/p2_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Guantes/p2_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Guantes/p2_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Guantes/p2_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Guantes/p2_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Guantes/p2_3.JPG"
       ]
     },
     {
@@ -202,11 +202,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 190,
       "detalles": "Color:Amarillo, Material:Piel Bovina",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Guantes/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Guantes/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Guantes/p3_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Guantes/p3_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Guantes/p3_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Guantes/p3_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Guantes/p3_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Guantes/p3_3.JPG"
       ]
     },
     {
@@ -216,11 +216,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 270,
       "detalles": "Color:Azul, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Mangueras/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Mangueras/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p1_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p1_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p1_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Mangueras/p1_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Mangueras/p1_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Mangueras/p1_3.JPG"
       ]
     },
     {
@@ -230,11 +230,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 900,
       "detalles": "Color:Azul, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Mangueras/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Mangueras/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p2_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p2_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p2_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Mangueras/p2_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Mangueras/p2_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Mangueras/p2_3.JPG"
       ]
     },
     {
@@ -244,11 +244,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 180,
       "detalles": "Color:Amarillo, Material:ABS",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Mangueras/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Mangueras/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p3_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p3_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Mangueras/p3_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Mangueras/p3_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Mangueras/p3_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Mangueras/p3_3.JPG"
       ]
     },
     {
@@ -258,11 +258,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 65,
       "detalles": "Color:Morado, Material:PP",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Pala/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Pala/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Pala/p1_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Pala/p1_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Pala/p1_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Pala/p1_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Pala/p1_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Pala/p1_3.JPG"
       ]
     },
     {
@@ -272,11 +272,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 60,
       "detalles": "Color:Beis, Material:Hierro",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Pala/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Pala/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Pala/p2_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Pala/p2_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Pala/p2_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Pala/p2_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Pala/p2_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Pala/p2_3.JPG"
       ]
     },
     {
@@ -286,11 +286,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 215,
       "detalles": "Color:Negro, Material:Acero Inoxidable",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Pala/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Pala/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Pala/p3_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Pala/p3_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Pala/p3_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Pala/p3_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Pala/p3_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Pala/p3_3.JPG"
       ]
     },
     {
@@ -300,11 +300,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
       "detalles": "Color:Verde, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Regaderas/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Regaderas/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p1_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p1_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p1_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Regaderas/p1_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Regaderas/p1_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Regaderas/p1_3.JPG"
       ]
     },
     {
@@ -314,11 +314,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
       "detalles": "Color:Verde, Material:Polietileno",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Regaderas/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Regaderas/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p2_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p2_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p2_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Regaderas/p2_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Regaderas/p2_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Regaderas/p2_3.JPG"
       ]
     },
     {
@@ -328,11 +328,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
       "detalles": "Color:Verde, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Regaderas/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Regaderas/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p3_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p3_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Regaderas/p3_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Regaderas/p3_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Regaderas/p3_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Regaderas/p3_3.JPG"
       ]
     },
     {
@@ -342,11 +342,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 100,
       "detalles": "Color:Transparente, Material:PP",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Riego Automatico/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Riego Automatico/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p1_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p1_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p1_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p1_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p1_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p1_3.JPG"
       ]
     },
     {
@@ -356,11 +356,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 100,
       "detalles": "Color:Transparente, Material:Polietileno",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Riego Automatico/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Riego Automatico/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p2_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p2_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p2_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p2_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p2_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p2_3.JPG"
       ]
     },
     {
@@ -370,11 +370,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 90,
       "detalles": "Color:Azul, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Riego Automatico/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Riego Automatico/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p3_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p3_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Riego Automatico/p3_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p3_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p3_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Riego Automatico/p3_3.JPG"
       ]
     },
     {
@@ -384,11 +384,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 100,
       "detalles": "Color:Albaricoque, Material:Acero Inoxidable",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Tijeras/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Tijeras/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p1_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p1_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p1_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Tijeras/p1_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Tijeras/p1_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Tijeras/p1_3.JPG"
       ]
     },
     {
@@ -398,11 +398,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 75,
       "detalles": "Color:Rosa, Material:Acero Inoxidable",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Tijeras/p2_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Tijeras/p2_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p2_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p2_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p2_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Tijeras/p2_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Tijeras/p2_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Tijeras/p2_3.JPG"
       ]
     },
     {
@@ -412,11 +412,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 135,
       "detalles": "Color:Naranja, Material:Acero Inoxidable",
-      "imagen": "/Productos/Saved Pictures/Herramientas/Tijeras/p3_1.JPG",
+      "imagen": "/Productos/SavedPictures/Herramientas/Tijeras/p3_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p3_1.JPG",
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p3_2.JPG",
-        "/Productos/Saved Pictures/Herramientas/Tijeras/p3_3.JPG"
+        "/Productos/SavedPictures/Herramientas/Tijeras/p3_1.JPG",
+        "/Productos/SavedPictures/Herramientas/Tijeras/p3_2.JPG",
+        "/Productos/SavedPictures/Herramientas/Tijeras/p3_3.JPG"
       ]
     },
     {
@@ -426,11 +426,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 870,
       "detalles": "Color:Rojo, Material:Arcilla polimérica",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeBarro/P1_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeBarro/P1_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeBarro/P1_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeBarro/P1_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeBarro/P1_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeBarro/P1_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeBarro/P1_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeBarro/P1_3.PNG"
       ]
     },
     {
@@ -440,11 +440,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 180,
       "detalles": "Color:Multicolor, Material:Arcilla polimérica",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeBarro/P2_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeBarro/P2_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeBarro/P2_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeBarro/P2_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeBarro/P2_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeBarro/P2_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeBarro/P2_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeBarro/P2_3.PNG"
       ]
     },
     {
@@ -454,11 +454,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 190,
       "detalles": "Color:Blanco, Material:Arcilla polimérica",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeBarro/P3_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeBarro/P3_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeBarro/P3_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeBarro/P3_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeBarro/P3_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeBarro/P3_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeBarro/P3_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeBarro/P3_3.PNG"
       ]
     },
     {
@@ -468,11 +468,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
       "detalles": "Color:Blanco, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Macetas/DePlastico/P1_1.jpg",
+      "imagen": "/Productos/SavedPictures/Macetas/DePlastico/P1_1.jpg",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DePlastico/P1_1.jpg",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P1_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P1_3.PNG"
+        "/Productos/SavedPictures/Macetas/DePlastico/P1_1.jpg",
+        "/Productos/SavedPictures/Macetas/DePlastico/P1_2.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P1_3.PNG"
       ]
     },
     {
@@ -482,11 +482,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 150,
       "detalles": "Color:Negro, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Macetas/DePlastico/P2_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DePlastico/P2_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DePlastico/P2_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P2_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P2_3.PNG"
+        "/Productos/SavedPictures/Macetas/DePlastico/P2_1.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P2_2.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P2_3.PNG"
       ]
     },
     {
@@ -496,11 +496,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 120,
       "detalles": "Color:Beige, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Macetas/DePlastico/P3_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DePlastico/P3_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DePlastico/P3_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P3_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P3_3.PNG"
+        "/Productos/SavedPictures/Macetas/DePlastico/P3_1.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P3_2.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P3_3.PNG"
       ]
     },
     {
@@ -510,11 +510,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 70,
       "detalles": "Color:Negro, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Macetas/DePlastico/P4_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DePlastico/P4_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DePlastico/P4_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P4_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DePlastico/P4_3.PNG"
+        "/Productos/SavedPictures/Macetas/DePlastico/P4_1.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P4_2.PNG",
+        "/Productos/SavedPictures/Macetas/DePlastico/P4_3.PNG"
       ]
     },
     {
@@ -524,11 +524,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 200,
       "detalles": "Color:Multicolor, Material:PP",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeVivero/P1_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeVivero/P1_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeVivero/P1_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P1_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P1_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeVivero/P1_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P1_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P1_3.PNG"
       ]
     },
     {
@@ -538,11 +538,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 65,
       "detalles": "Color:Amarilo Mostaza, Material:Papel",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeVivero/P2_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeVivero/P2_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeVivero/P2_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P2_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P2_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeVivero/P2_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P2_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P2_3.PNG"
       ]
     },
     {
@@ -552,11 +552,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 60,
       "detalles": "Color:Marrón Chocolate, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeVivero/P3_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeVivero/P3_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeVivero/P3_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P3_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P3_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeVivero/P3_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P3_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P3_3.PNG"
       ]
     },
     {
@@ -566,11 +566,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 145,
       "detalles": "Color:Burdeos, Material:PP",
-      "imagen": "/Productos/Saved Pictures/Macetas/DeVivero/P4_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/DeVivero/P4_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/DeVivero/P4_1.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P4_2.PNG",
-        "/Productos/Saved Pictures/Macetas/DeVivero/P4_3.PNG"
+        "/Productos/SavedPictures/Macetas/DeVivero/P4_1.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P4_2.PNG",
+        "/Productos/SavedPictures/Macetas/DeVivero/P4_3.PNG"
       ]
     },
     {
@@ -580,11 +580,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 250,
       "detalles": "Color:Transparente, Material:Vidrio",
-      "imagen": "/Productos/Saved Pictures/Macetas/Hidroponicas/P1_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/Hidroponicas/P1_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P1_1.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P1_2.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P1_3.PNG"
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P1_1.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P1_2.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P1_3.PNG"
       ]
     },
     {
@@ -594,11 +594,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 200,
       "detalles": "Color:Transparente, Material:Vidrio",
-      "imagen": "/Productos/Saved Pictures/Macetas/Hidroponicas/P2_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/Hidroponicas/P2_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P2_1.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P2_2.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P2_3.PNG"
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P2_1.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P2_2.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P2_3.PNG"
       ]
     },
     {
@@ -608,11 +608,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 300,
       "detalles": "Color:Blanco, Material:PP",
-      "imagen": "/Productos/Saved Pictures/Macetas/Hidroponicas/P3_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/Hidroponicas/P3_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P3_1.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P3_2.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P3_3.PNG"
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P3_1.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P3_2.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P3_3.PNG"
       ]
     },
     {
@@ -622,11 +622,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
       "detalles": "Color:Blanco, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Macetas/Hidroponicas/P4_1.PNG",
+      "imagen": "/Productos/SavedPictures/Macetas/Hidroponicas/P4_1.PNG",
       "imagenes": [
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P4_1.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P4_2.PNG",
-        "/Productos/Saved Pictures/Macetas/Hidroponicas/P4_3.PNG"
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P4_1.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P4_2.PNG",
+        "/Productos/SavedPictures/Macetas/Hidroponicas/P4_3.PNG"
       ]
     },
     {
@@ -636,11 +636,11 @@
       "descripcion": "Descripción del Producto 1",
       "precio": 50,
       "detalles": "Color:Verde, Material:Plástico",
-      "imagen": "/Productos/Saved Pictures/Soportes/Clips/p1_1.JPG",
+      "imagen": "/Productos/SavedPictures/Soportes/Clips/p1_1.JPG",
       "imagenes": [
-        "/Productos/Saved Pictures/Soportes/Clips/p1_1.JPG",
-        "/Productos/Saved Pictures/Soportes/Clips/p1_1.JPG",
-        "/Productos/Saved Pictures/Soportes/Clips/p1_1.JPG"
+        "/Productos/SavedPictures/Soportes/Clips/p1_1.JPG",
+        "/Productos/SavedPictures/Soportes/Clips/p1_1.JPG",
+        "/Productos/SavedPictures/Soportes/Clips/p1_1.JPG"
       ]
     }
 
