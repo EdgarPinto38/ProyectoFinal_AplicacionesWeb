@@ -60,6 +60,7 @@
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">VerdeVida</a>
+       
         <button
           class="navbar-toggler"
           type="button"
@@ -70,6 +71,7 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item logged-out">
@@ -93,17 +95,14 @@
        
             <li class="nav-item logged-in">
               <a class="nav-link" href="#" id="logout">Log Out</a>
+            </li> 
              
-            
-             
-            </li>    
           </ul>
           
         </div>
       </div>
 
     <li class="nav-item logged-in">
-      
       <div id="carrito-compras" class="carrito-compras">
         <!-- Cambia la siguiente línea con la etiqueta de imagen que desees -->
         <img id="carrito-imagen" src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-carrinho-de-compras-icon-carrinho-de-compras-by-vexels.png" alt="Carrito de Compras" height="50">
@@ -111,15 +110,25 @@
             <!-- Aquí se mostrarán los productos agregados al carrito -->
             <div id="total-carrito"></div>
             <div id="paypal-button"></div>
-
+            
         </div>
     </div>
       
   </li>
+  
      </nav>
     <!-- termina la nav bar. -->
 
     <div id="filtroCategorias">
+      <input
+    type="text"
+    id="barraBusqueda"
+    class="form-control me-2"
+    placeholder="Buscar productos por nombre"/>
+    <button class="btn btn-outline-success" onclick="buscarPorNombre()">Buscar</button>
+          <br>
+          <br>
+
       <button class="btn btn-success" onclick="filtrarPorCategoria(null)">Todos</button>
       <button class="btn btn-primary" onclick="filtrarPorCategoria('Decoracion')">Decoracion</button>
       <button class="btn btn-primary" onclick="filtrarPorCategoria('Herramientas')">Herramientas</button>
@@ -128,6 +137,7 @@
     </div>
 
   <div id="catalogo" class="row"></div>
+  
 
   <!-- Paginación de Bootstrap -->
   <nav aria-label="Page navigation example">
@@ -354,6 +364,7 @@
     return;
   }
 
+
   // Limpiar el contenido previo del carrusel
   carouselInner.innerHTML = '';
   detallesTexto.textContent = '';
@@ -421,6 +432,9 @@
 
       totalDiv.textContent = `Total: $${total.toFixed(2)}`;
     }
+
+  
+
   </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -429,6 +443,7 @@
 <script src="/CarritoCompras/paypal2.js"></script>
 <script src="/Productos/productos.json" type="module"></script>
 <script src="/JavaScript/main.js" type="module"></script>
+<script src="./busqueda.js" type="module"></script>
 <script src="/Productos/carrito.js" type="module"></script>
 </body>
 </html>
