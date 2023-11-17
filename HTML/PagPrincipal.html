@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center; /* Alinea todos los elementos al centro */
+    }
+
+    nav, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 14px 0;
+    }
+
+    nav a, footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover, footer a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    nav img {
+      max-height: 30px; /* Ajusta la altura según tu necesidad */
+      margin: 20px;
+    }
+
+    nav .search-container {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 14px;
+      border: none;
+    }
+
+    .catalog {
+      display: none; /* Oculta el enlace del catálogo */
+    }
+
+    .contact {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <nav>
+        <img src="https://www.ngenespanol.com/wp-content/uploads/2023/08/las-plantas-se-mueven-por-estos-importantes-motivos.jpg" alt="Logo" class="img-fluid">
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Buscar productos..." name="search">
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+  </nav>
+
+  <div class="container mt-3">
+    <!-- Agregamos una imagen responsiva de Bootstrap -->
+    <img src="https://www.ngenespanol.com/wp-content/uploads/2023/08/las-plantas-se-mueven-por-estos-importantes-motivos.jpg" class="img-fluid" alt="Imagen Responsiva">
+    <!-- Agregamos un botón "A comprar" en el medio abajo -->
+    <div class="text-center mt-3">
+      <button type="button" class="btn btn-primary">A comprar</button>
+    </div>
+  </div>
+
+  <div id="carruselProductos" class="carousel slide mt-3 mx-auto" data-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Card 1 -->
+      <div class="carousel-item active">
+        <div class="card" style="width: 18rem;">
+          <img src="https://verdecora.es/blog/wp-content/uploads/2022/11/plantas-pequenas.jpg.webp" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Producto 1</h5>
+            <p class="card-text">Descripción del producto 1.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="carousel-item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://verdecora.es/blog/wp-content/uploads/2018/08/plantas-vivaces-flor-tardia.jpg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text">Descripción del producto 2.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Agregar más cards según sea necesario -->
+    </div>
+    <a class="carousel-control-prev" href="#carruselProductos" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carruselProductos" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+
+  <div class="text-center mt-3">
+    <h4>Texto Encima del Botón</h4>
+    <button type="button" class="btn btn-primary">A comprar</button>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col">
+      <p>Texto 1 de la columna 1</p>
+    </div>
+    <div class="col">
+      <p>Texto 2 de la columna 2</p>
+    </div>
+    <div class="col">
+      <p>Texto 3 de la columna 3</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Tu Tienda Online</p>
+    <p><strong>Información de Contacto:</strong></p>
+    <ul>
+      <li><strong>Teléfono:</strong> +123456789</li>
+      <li><strong>Dirección:</strong> Calle Principal, Ciudad</li>
+      <li><strong>Correo Electrónico:</strong> info@tutienda.com</li>
+    </ul>
+    <p><a href="#">Términos y Condiciones</a> | <a href="#">Política de Privacidad</a></p>
+  </footer>
+
+</body>
+</html>
