@@ -20,7 +20,7 @@ function agregarAlCarrito(id) {
 function mostrarPopup() {
   var popup = document.getElementById("popup1");
   popup.style.display = "block";
-  showMessage(productoId + " Agregado al carrito ", "success")
+
 }
 
 function cerrarPopup() {
