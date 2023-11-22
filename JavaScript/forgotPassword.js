@@ -1,6 +1,6 @@
 import { sendPasswordResetEmail }  from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"
 import { auth } from '../JavaScript/firebase.js'
-import { showMessage } from "./showMessage.1.js"
+import { showMessage } from "./showMessage.js"
 
 const forgotF = document.querySelector('#forgot-form')
 console.log(forgotF)
