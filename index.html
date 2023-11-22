@@ -17,6 +17,92 @@
     />
     <!-- CSS perzonalizado -->
     <link rel="stylesheet" href="./CSS/main.css" />
+    <style>
+      body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       text-align: center;
+     }
+ 
+     nav, footer {
+       background-color: darkolivegreen;
+       color: white;
+       text-align: center;
+       padding: 20px;
+     }
+ 
+     nav a, footer a {
+       color: white;
+       text-decoration: none;
+     }
+ 
+     nav a:hover, footer a:hover {
+       background-color: #ddd;
+       color: black;
+     }
+ 
+     nav {
+       background-color:darkolivegreen;
+       overflow: hidden;
+       display: flex;
+       align-items: center;
+       justify-content: center; /* Centra horizontalmente */
+     }
+ 
+     nav img {
+       max-height: 90px;
+       margin: auto;
+     }
+ 
+     nav .search-container {
+       margin-left: auto;
+       margin-right: 0;
+     }
+ 
+     input[type=text] {
+       padding: 6px;
+       margin-top: 8px;
+       font-size: 14px;
+       border: none;
+     }
+ 
+     .catalog {
+       display: none;
+     }
+ 
+     .contact {
+       float: right;
+     }
+ 
+     /* Estilos para las imágenes arriba de los textos */
+     .column-img {
+       max-width: 100%;
+       height: auto;
+       margin-bottom: 10px;
+       max-height: 100px; /* Ajusta el tamaño máximo según tus necesidades */
+     }
+ 
+     #featuredImages {
+       margin-top: 20px;
+     }
+ 
+     .featured-image {
+       max-height: 500px; /* Ajusta el tamaño máximo según tus necesidades */
+       max-width: 500px; /* Para mantener la proporción de aspecto */
+       margin: auto; /* Centra horizontalmente */
+     }
+ 
+     .btn-ver-mas {
+       margin-top: 10px;
+     }
+ 
+     .carousel-control-prev, .carousel-control-next {
+       top: 1%; /* Posiciona las flechas a la mitad verticalmente */
+       transform: translateY(-50%);
+     }
+ 
+   </style>
     
   </head>
   <body class="bg-body-tertiary">
