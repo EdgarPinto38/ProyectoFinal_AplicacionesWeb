@@ -6,7 +6,6 @@ import './signinForm.js'
 import './googleLogin.js'
 import './logout.js'
 import './showMessage.js'
-import "./mensaje.js"
 //import './forgotPassword.js'
 //import './updatePassword.js'
 
