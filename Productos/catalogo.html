@@ -10,6 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../JavaScript/main.js" type="module"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AQHb_kWVVp939vsNMtjykIhYmktL-OShdK7z_cBatgDZhq9y4kLV5omKE8rbhJ-u_trvLnrjZhbjFaFd&currency=USD"></script>
+</head>
   
 
   <style>
@@ -25,6 +27,28 @@
       z-index: 1;
       width: 20%;
     }
+    .popup1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 200px;
+    border: 50px solid #ccc;
+    background: #fff;
+    z-index: 1000;
+}
+
+.cerrar-popup1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.contenido-popup {
+    /* Estilo del contenido del pop-up */
+}
+
 
     .producto-container {
     text-align:center;
@@ -103,19 +127,104 @@
         </div>
       </div>
 
-    <li class="nav-item logged-in">
-      <div id="carrito-compras" class="carrito-compras">
-        <!-- Cambia la siguiente línea con la etiqueta de imagen que desees -->
-        <img id="carrito-imagen" src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-carrinho-de-compras-icon-carrinho-de-compras-by-vexels.png" alt="Carrito de Compras" height="50">
-        <div id="carrito-productos" class="carrito-productos">
-            <!-- Aquí se mostrarán los productos agregados al carrito -->
-            <div id="total-carrito"></div>
-            <div id="paypal-button"></div>
-            
+      <li class="nav-item logged-in">
+        <div id="popup1" class="popup1">
+            <span class="cerrar-popup1" onclick="cerrarPopup()">&times;</span>
+            <div id="contenido-popup" class="contenido-popup">
+                <!-- Aquí se mostrarán los productos agregados al carrito -->
+                <div id="total-carrito-popup"></div>
+                <!-- Contenedor para el botón de PayPal dentro del pop-up -->
+                <div id="paypal-popup-container" style="width: 200px; height: 50px;"></div>
+            </div>
         </div>
-    </div>
-      
-  </li>
+        <div id="carrito-compras" class="carrito-compras">
+            <!-- Cambia la siguiente línea con la etiqueta de imagen que desees -->
+            <img id="carrito-imagen" src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-carrinho-de-compras-icon-carrinho-de-compras-by-vexels.png" alt="Carrito de Compras" height="50" style="cursor: pointer;" onclick="mostrarPopup1()">
+        </div>
+    </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<!-- Resto del contenido HTML... -->
+
+<script>
+var carrito = []; // Array para almacenar los productos en el carrito
+
+// Agrega el código de PayPal aquí
+paypal.Buttons({
+  createOrder: function(data, actions) {
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: calcularTotalCarrito() // Utiliza una función para obtener el total del carrito
+        }
+      }]
+    });
+  },
+  onApprove: function(data, actions) {
+    return actions.order.capture().then(function(details) {
+      alert('Pago completado por ' + details.payer.name.given_name);
+      // Aquí puedes agregar lógica adicional después de que se complete el pago
+      vaciarCarrito(); // Vaciar el carrito después de completar el pago
+      cerrarPopup(); // Cerrar el pop-up después de completar el pago
+    });
+  }
+}).render('#paypal-popup-container');
+
+function mostrarPopup1() {
+  var popup = document.getElementById("popup1");
+  popup.style.display = "block";
+  // Actualiza la interfaz del pop-up del carrito al mostrarse
+  actualizarInterfazCarritoPopup();
+}
+
+function cerrarPopup() {
+  var popup = document.getElementById("popup1");
+  popup.style.display = "none";
+}
+
+function calcularTotalCarrito() {
+  // Lógica para calcular el total del carrito
+  var total = 0;
+  carrito.forEach(producto => {
+    total += producto.precio;
+  });
+  return total.toFixed(2);
+}
+
+function vaciarCarrito() {
+  // Lógica para vaciar el carrito
+  carrito = [];
+}
+
+// Función para agregar productos al carrito
+function agregarAlCarrito(producto) {
+  carrito.push(producto);
+  // Actualizar la interfaz del pop-up del carrito al agregar productos
+  actualizarInterfazCarritoPopup();
+}
+
+function actualizarInterfazCarritoPopup() {
+  var carritoPopupDiv = document.getElementById('total-carrito-popup');
+  var totalPopup = 0;
+
+  carritoPopupDiv.innerHTML = '';
+
+  carrito.forEach(producto => {
+    totalPopup += producto.precio;
+    carritoPopupDiv.innerHTML += `
+      <p>${producto.nombre} - $${producto.precio.toFixed(2)}</p>
+    `;
+  });
+
+  carritoPopupDiv.innerHTML += `<strong>Total: $${totalPopup.toFixed(2)}</strong>`;
+}
+</script>
+          
+
+            
   
      </nav>
     <!-- termina la nav bar. -->
@@ -144,7 +253,7 @@
   <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center" id="pagination"></ul>
   </nav>
-
+  
    <!-- Empieza el Carousel -->
 <div id="popup" class="popup">
   <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -168,6 +277,7 @@
     <p id="precioTexto"></p>
     <h3>Descripción</h3>
     <p id="descripcionTexto"></p>
+    
     <button id="cerrarPopup" class="btn btn-danger">Cerrar</button>
   </div>
 </div>
@@ -438,7 +548,7 @@
 <script src="../JavaScript/main.js" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=AQHb_kWVVp939vsNMtjykIhYmktL-OShdK7z_cBatgDZhq9y4kLV5omKE8rbhJ-u_trvLnrjZhbjFaFd&currency=USD"></script>
+
 <script src="../Productos/productos.json"></script>
 <script src="../Productos/carrito.js" type="module"></script>
 <script src="../CarritoCompras/paypal2.js"></script>
