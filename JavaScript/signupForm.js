@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"
 import { auth } from './firebase.js'
-import { showMessage } from './showMessage.js'
+import { showMessage } from "./showMessage.1.js"
 const signupForm = document.querySelector('#signup-form')
 console.log(signupForm)
 document.getElementById('signup-form').addEventListener('submit', async function (event) {
