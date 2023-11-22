@@ -7,7 +7,6 @@ import './googleLogin.js'
 import './logout.js'
 //import './showMessage.js'
 //import './forgotPassword.js'
-//import './updatePassword.js'
 
 
 onAuthStateChanged(auth, async (user) =>{
