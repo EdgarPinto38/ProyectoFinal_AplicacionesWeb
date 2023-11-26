@@ -1,4 +1,134 @@
 [
+  {
+    "id": 46,
+    "categoria": "Plantas",
+    "nombre": "Sansevieria",
+    "precio": 224,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_3.avif"
+    ]
+  },
+  {
+    "id": 47,
+    "categoria": "Plantas",
+    "nombre": "Cactus",
+    "precio": 348,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_3.avif"
+    ]
+  },
+  {
+    "id": 48,
+    "categoria": "Plantas",
+    "nombre": "Pata de elefante",
+    "precio": 326,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_3.avif"
+    ]
+  },
+  {
+    "id": 49,
+    "categoria": "Plantas",
+    "nombre": "Cactus de espina de pescado",
+    "precio": 326,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_3.avif"
+    ]
+  },
+  {
+    "id": 50,
+    "categoria": "Plantas",
+    "nombre": "Vriesea",
+    "precio": 223,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_3.avif"
+    ]
+  },
+  {
+    "id": 51,
+    "categoria": "Plantas",
+    "nombre": "Strelitzia",
+    "precio": 256,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_3.avif"
+    ]
+  },
+  {
+    "id": 52,
+    "categoria": "Plantas",
+    "nombre": "Helecho nido de ave",
+    "precio": 208,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_3.avif"
+    ]
+  },
+  {
+    "id": 53,
+    "categoria": "Plantas",
+    "nombre": "Kentia",
+    "precio": 284,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_3.avif"
+    ]
+  },
+  {
+    "id": 54,
+    "categoria": "Plantas",
+    "nombre": "Aloe Vera",
+    "precio": 318,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_3.avif"
+    ]
+  },
+  {
+    "id": 55,
+    "categoria": "Plantas",
+    "nombre": "Poto",
+    "precio": 203,
+    "detalles": "",
+    "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_1.avif",
+    "imagenes": [
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_1.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_2.avif",
+      "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_3.avif"
+    ]
+   },
     {
       "id": 1,
       "categoria": "Decoracion",
@@ -596,136 +726,6 @@
         "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Soportes/Clips/p1_1.avif",
         "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Soportes/Clips/p1_1.avif",
         "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Soportes/Clips/p1_1.avif"
-      ]
-    },
-    {
-      "id": 46,
-      "categoria": "Plantas",
-      "nombre": "Sansevieria",
-      "precio": 224,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p1_3.avif"
-      ]
-    },
-    {
-      "id": 47,
-      "categoria": "Plantas",
-      "nombre": "Cactus",
-      "precio": 348,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p2_3.avif"
-      ]
-    },
-    {
-      "id": 48,
-      "categoria": "Plantas",
-      "nombre": "Pata de elefante",
-      "precio": 326,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p3_3.avif"
-      ]
-    },
-    {
-      "id": 49,
-      "categoria": "Plantas",
-      "nombre": "Cactus de espina de pescado",
-      "precio": 326,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p4_3.avif"
-      ]
-    },
-    {
-      "id": 50,
-      "categoria": "Plantas",
-      "nombre": "Vriesea",
-      "precio": 223,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p5_3.avif"
-      ]
-    },
-    {
-      "id": 51,
-      "categoria": "Plantas",
-      "nombre": "Strelitzia",
-      "precio": 256,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p6_3.avif"
-      ]
-    },
-    {
-      "id": 52,
-      "categoria": "Plantas",
-      "nombre": "Helecho nido de ave",
-      "precio": 208,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p7_3.avif"
-      ]
-    },
-    {
-      "id": 53,
-      "categoria": "Plantas",
-      "nombre": "Kentia",
-      "precio": 284,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p8_3.avif"
-      ]
-    },
-    {
-      "id": 54,
-      "categoria": "Plantas",
-      "nombre": "Aloe Vera",
-      "precio": 318,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p9_3.avif"
-      ]
-    },
-    {
-      "id": 55,
-      "categoria": "Plantas",
-      "nombre": "Poto",
-      "precio": 203,
-      "detalles": "",
-      "imagen": "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_1.avif",
-      "imagenes": [
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_1.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_2.avif",
-        "/ProyectoFinal_AplicacionesWeb/Productos/SavedPictures/Plantas/p10_3.avif"
       ]
     }
   ]
