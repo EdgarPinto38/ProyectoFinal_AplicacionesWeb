@@ -75,6 +75,8 @@
     background-color: #14ac37 !important;
   }
   </style>
+
+      
 </head>
 <body>
  
@@ -126,23 +128,29 @@
           
         </div>
       </div>
+      
 
       <li class="nav-item logged-in">
+        <!-- Mensaje de carrito movido fuera del pop-up -->
+        
         <div id="popup1" class="popup1">
           <span class="cerrar-popup1" onclick="cerrarPopup()">&times;</span>
           <div id="contenido-popup" class="contenido-popup">
-            <div id="mensaje-carrito-popup" class="mensaje-carrito-popup" style="display: none;"></div>
+            <!-- Resto del código del pop-up del carrito -->
             <div id="total-carrito-popup"></div>
             <div id="paypal-popup-container" style="width: 200px; height: 50px;"></div>
           </div>
         </div>
+      
         <div id="carrito-compras" class="carrito-compras">
           <img id="carrito-imagen" src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-carrinho-de-compras-icon-carrinho-de-compras-by-vexels.png" alt="Carrito de Compras" height="50" style="cursor: pointer;" onclick="mostrarPopup1()">
         </div>
       </li>
-    </ul>
-  </div>
-</nav>
+      </ul>
+     
+      </div>
+      </nav>
+      <div id="mensaje-global" style="display: none;"></div>
 
 <!-- Resto del contenido HTML... -->
 
@@ -205,17 +213,16 @@
   }
   
   function mostrarMensajePopup(mensaje) {
-    var mensajePopupElement = document.getElementById("mensaje-carrito-popup");
-  
-    // Actualizar el contenido del mensaje
-    mensajePopupElement.innerHTML = mensaje;
+    // Actualizar el contenido del mensaje en el lugar donde deseas mostrarlo
+    var mensajeGlobalElement = document.getElementById("mensaje-global");
+    mensajeGlobalElement.innerHTML = mensaje;
   
     // Mostrar el mensaje
-    mensajePopupElement.style.display = "block";
+    mensajeGlobalElement.style.display = "block";
   
     // Ocultar el mensaje después de 3 segundos (puedes ajustar el tiempo según tus necesidades)
     setTimeout(function() {
-      mensajePopupElement.style.display = "none";
+      mensajeGlobalElement.style.display = "none";
     }, 3000);
   }
   
@@ -406,6 +413,7 @@
      </div>
    </div>
  </div>
+
 
   <script>
    let productos;
