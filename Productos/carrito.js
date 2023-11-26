@@ -19,26 +19,26 @@ function agregarAlCarrito(id) {
     console.error('Producto no encontrado');
   }
 }
-
 function mostrarMensajePopup(mensaje) {
-  var mensajePopupElement = document.getElementById("mensaje-carrito-popup");
+  var mensajeGlobalElement = document.getElementById("mensaje-global");
 
- 
-  if (mensajePopupElement) {
-   
-    mensajePopupElement.textContent = mensaje;
+  // Verifica si el elemento existe antes de actualizar el contenido
+  if (mensajeGlobalElement) {
+    // Actualizar el contenido del mensaje
+    mensajeGlobalElement.textContent = mensaje;
 
-   
-    mensajePopupElement.style.display = "block";
+    // Mostrar el mensaje
+    mensajeGlobalElement.style.display = "block";
 
-    
+    // Ocultar el mensaje después de 3 segundos (puedes ajustar el tiempo según tus necesidades)
     setTimeout(function () {
-      mensajePopupElement.style.display = "none";
+      mensajeGlobalElement.style.display = "none";
     }, 3000);
   } else {
-    console.error('Elemento #mensaje-carrito-popup no encontrado en el DOM');
+    console.error('Elemento #mensaje-global no encontrado en el DOM');
   }
 }
+
 
 function mostrarPopup() {
   var popup = document.getElementById("popup1");
