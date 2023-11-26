@@ -1,6 +1,3 @@
-import { showMessage } from "../JavaScript/showMessage.js";
-
-
 function agregarAlCarrito(id) {
   const producto = obtenerProductoPorId(id);
 
@@ -10,17 +7,42 @@ function agregarAlCarrito(id) {
       nombre: producto.nombre,
       precio: producto.precio
     });
+
+  
+    mostrarMensajePopup('Producto agregado al carrito: ' + producto.nombre);
+
+  
     actualizarInterfazCarrito();
+
     console.log('Producto agregado al carrito:', producto);
   } else {
     console.error('Producto no encontrado');
   }
 }
+function mostrarMensajePopup(mensaje) {
+  var mensajeGlobalElement = document.getElementById("mensaje-global");
+
+  // Verifica si el elemento existe antes de actualizar el contenido
+  if (mensajeGlobalElement) {
+    // Actualizar el contenido del mensaje
+    mensajeGlobalElement.textContent = mensaje;
+
+    // Mostrar el mensaje
+    mensajeGlobalElement.style.display = "block";
+
+    // Ocultar el mensaje después de 3 segundos (puedes ajustar el tiempo según tus necesidades)
+    setTimeout(function () {
+      mensajeGlobalElement.style.display = "none";
+    }, 3000);
+  } else {
+    console.error('Elemento #mensaje-global no encontrado en el DOM');
+  }
+}
+
 
 function mostrarPopup() {
   var popup = document.getElementById("popup1");
   popup.style.display = "block";
-
 }
 
 function cerrarPopup() {
@@ -29,7 +51,7 @@ function cerrarPopup() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Agregar evento al hacer clic en "Agregar al Carrito"
+
   document.addEventListener('click', function (event) {
     if (event.target.classList.contains('btn-agregar-carrito')) {
       const productoId = parseInt(event.target.getAttribute('data-producto-id'));
@@ -42,6 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Agregar evento al hacer clic en "Cerrar" en el pop-up
+  
   document.getElementById('cerrarPopup').addEventListener('click', cerrarPopup);
 });
