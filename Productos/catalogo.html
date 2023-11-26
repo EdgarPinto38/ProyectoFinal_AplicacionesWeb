@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <script src="../JavaScript/main.js" type="module"></script>
   <script src="https://www.paypal.com/sdk/js?client-id=AQHb_kWVVp939vsNMtjykIhYmktL-OShdK7z_cBatgDZhq9y4kLV5omKE8rbhJ-u_trvLnrjZhbjFaFd&currency=USD"></script>
 </head>
   
@@ -45,9 +45,9 @@
     right: 10px;
     cursor: pointer;
 }
-/*.contenido-popup {
-    Estilo del contenido del pop-up 
-}*/
+.contenido-popup {
+    /* Estilo del contenido del pop-up */
+}
 
 
     .producto-container {
@@ -84,7 +84,7 @@
      <!-- Empieza la nav bar -->
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://edgarpinto38.github.io/ProyectoFinal_AplicacionesWeb/index.html">VerdeVida</a>
+        <a class="navbar-brand" href="#">VerdeVida</a>
        
         <button
           class="navbar-toggler"
@@ -129,100 +129,113 @@
 
       <li class="nav-item logged-in">
         <div id="popup1" class="popup1">
-            <span class="cerrar-popup1" onclick="cerrarPopup()">&times;</span>
-            <div id="contenido-popup" class="contenido-popup">
-                <!-- Aquí se mostrarán los productos agregados al carrito -->
-                <div id="total-carrito-popup"></div>
-                <!-- Contenedor para el botón de PayPal dentro del pop-up -->
-                <div id="paypal-popup-container" style="width: 200px; height: 50px;"></div>
-            </div>
+          <span class="cerrar-popup1" onclick="cerrarPopup()">&times;</span>
+          <div id="contenido-popup" class="contenido-popup">
+            <div id="mensaje-carrito-popup" class="mensaje-carrito-popup" style="display: none;"></div>
+            <div id="total-carrito-popup"></div>
+            <div id="paypal-popup-container" style="width: 200px; height: 50px;"></div>
+          </div>
         </div>
         <div id="carrito-compras" class="carrito-compras">
-            <!-- Cambia la siguiente línea con la etiqueta de imagen que desees -->
-            <img id="carrito-imagen" src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-carrinho-de-compras-icon-carrinho-de-compras-by-vexels.png" alt="Carrito de Compras" height="50" style="cursor: pointer;" onclick="mostrarPopup1()">
+          <img id="carrito-imagen" src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-carrinho-de-compras-icon-carrinho-de-compras-by-vexels.png" alt="Carrito de Compras" height="50" style="cursor: pointer;" onclick="mostrarPopup1()">
         </div>
-    </li>
+      </li>
     </ul>
   </div>
-</div>
 </nav>
 
 <!-- Resto del contenido HTML... -->
 
 <script>
-var carrito = []; // Array para almacenar los productos en el carrito
-
-// Agrega el código de PayPal aquí
-paypal.Buttons({
-  createOrder: function(data, actions) {
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: calcularTotalCarrito() // Utiliza una función para obtener el total del carrito
-        }
-      }]
-    });
-  },
-  onApprove: function(data, actions) {
-    return actions.order.capture().then(function(details) {
-      alert('Pago completado por ' + details.payer.name.given_name);
-      // Aquí puedes agregar lógica adicional después de que se complete el pago
-      vaciarCarrito(); // Vaciar el carrito después de completar el pago
-      cerrarPopup(); // Cerrar el pop-up después de completar el pago
-    });
+  var carrito = []; // Array para almacenar los productos en el carrito
+  
+  // Agrega el código de PayPal aquí
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: calcularTotalCarrito() // Utiliza una función para obtener el total del carrito
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Pago completado por ' + details.payer.name.given_name);
+        // Aquí puedes agregar lógica adicional después de que se complete el pago
+        vaciarCarrito(); // Vaciar el carrito después de completar el pago
+        cerrarPopup(); // Cerrar el pop-up después de completar el pago
+      });
+    }
+  }).render('#paypal-popup-container');
+  
+  function mostrarPopup1() {
+    var popup = document.getElementById("popup1");
+    popup.style.display = "block";
+    // Actualiza la interfaz del pop-up del carrito al mostrarse
+    actualizarInterfazCarritoPopup();
   }
-}).render('#paypal-popup-container');
-
-function mostrarPopup1() {
-  var popup = document.getElementById("popup1");
-  popup.style.display = "block";
-  // Actualiza la interfaz del pop-up del carrito al mostrarse
-  actualizarInterfazCarritoPopup();
-}
-
-function cerrarPopup() {
-  var popup = document.getElementById("popup1");
-  popup.style.display = "none";
-}
-
-function calcularTotalCarrito() {
-  // Lógica para calcular el total del carrito
-  var total = 0;
-  carrito.forEach(producto => {
-    total += producto.precio;
-  });
-  return total.toFixed(2);
-}
-
-function vaciarCarrito() {
-  // Lógica para vaciar el carrito
-  carrito = [];
-}
-
-// Función para agregar productos al carrito
-function agregarAlCarrito(producto) {
-  carrito.push(producto);
-  // Actualizar la interfaz del pop-up del carrito al agregar productos
-  actualizarInterfazCarritoPopup();
-}
-
-function actualizarInterfazCarritoPopup() {
-  var carritoPopupDiv = document.getElementById('total-carrito-popup');
-  var totalPopup = 0;
-
-  carritoPopupDiv.innerHTML = '';
-
-  carrito.forEach(producto => {
-    totalPopup += producto.precio;
-    carritoPopupDiv.innerHTML += `
-      <p>${producto.nombre} - $${producto.precio.toFixed(2)}</p>
-    `;
-  });
-
-  carritoPopupDiv.innerHTML += `<strong>Total: $${totalPopup.toFixed(2)}</strong>`;
-}
+  
+  function cerrarPopup() {
+    var popup = document.getElementById("popup1");
+    popup.style.display = "none";
+  }
+  
+  function calcularTotalCarrito() {
+    // Lógica para calcular el total del carrito
+    var total = 0;
+    carrito.forEach(producto => {
+      total += producto.precio;
+    });
+    return total.toFixed(2);
+  }
+  
+  function vaciarCarrito() {
+    // Lógica para vaciar el carrito
+    carrito = [];
+  }
+  
+  // Función para agregar productos al carrito
+  function agregarAlCarrito(producto) {
+    carrito.push(producto);
+    // Actualizar la interfaz del pop-up del carrito al agregar productos
+    mostrarMensajePopup('Producto agregado al carrito: ' + producto.nombre);
+    actualizarInterfazCarritoPopup();
+  }
+  
+  function mostrarMensajePopup(mensaje) {
+    var mensajePopupElement = document.getElementById("mensaje-carrito-popup");
+  
+    // Actualizar el contenido del mensaje
+    mensajePopupElement.innerHTML = mensaje;
+  
+    // Mostrar el mensaje
+    mensajePopupElement.style.display = "block";
+  
+    // Ocultar el mensaje después de 3 segundos (puedes ajustar el tiempo según tus necesidades)
+    setTimeout(function() {
+      mensajePopupElement.style.display = "none";
+    }, 3000);
+  }
+  
+  function actualizarInterfazCarritoPopup() {
+    var carritoPopupDiv = document.getElementById('total-carrito-popup');
+    var totalPopup = 0;
+  
+    carritoPopupDiv.innerHTML = '';
+  
+    carrito.forEach(producto => {
+      totalPopup += producto.precio;
+      carritoPopupDiv.innerHTML += `
+        <p>${producto.nombre} - $${producto.precio.toFixed(2)}</p>
+      `;
+    });
+  
+    carritoPopupDiv.innerHTML += `<strong>Total: $${totalPopup.toFixed(2)}</strong>`;
+  }
 </script>
-          
+
 
             
   
@@ -243,7 +256,6 @@ function actualizarInterfazCarritoPopup() {
       <button class="btn btn-primary" onclick="filtrarPorCategoria('Decoracion')">Decoracion</button>
       <button class="btn btn-primary" onclick="filtrarPorCategoria('Herramientas')">Herramientas</button>
       <button class="btn btn-primary" onclick="filtrarPorCategoria('Macetas')">Macetas</button>
-      <button class="btn btn-primary" onclick="filtrarPorCategoria('Plantas')">Plantas</button>
       <!-- Otros botones de categoría... -->
     </div>
 
@@ -527,23 +539,31 @@ function actualizarInterfazCarritoPopup() {
       document.getElementById('popup').style.display = 'none';
     });
     function actualizarInterfazCarrito() {
-      const carritoProductosDiv = document.getElementById('carrito-productos');
-      const totalDiv = document.getElementById('total-carrito');
-      let total = 0;
+  const carritoProductosDiv = document.getElementById('carrito-productos');
+  const totalDiv = document.getElementById('total-carrito');
 
-      carritoProductosDiv.innerHTML = '';
+  // Verifica si los elementos existen antes de intentar acceder a sus propiedades
+  if (!carritoProductosDiv || !totalDiv) {
+    console.error('Al menos uno de los elementos no se encontró en el DOM');
+    return;
+  }
 
-      carrito.forEach(producto => {
-        total += producto.precio;
-        carritoProductosDiv.innerHTML += `
-          <p>${producto.nombre} - $${producto.precio.toFixed(2)}
-            <button class="btn btn-danger btn-eliminar-producto" data-producto-id="${producto.id}">Eliminar</button>
-          </p>
-        `;
-      });
+  let total = 0;
 
-      totalDiv.textContent = `Total: $${total.toFixed(2)}`;
-    }
+  carritoProductosDiv.innerHTML = '';
+
+  carrito.forEach(producto => {
+    total += producto.precio;
+    carritoProductosDiv.innerHTML += `
+      <p>${producto.nombre} - $${producto.precio.toFixed(2)}
+        <button class="btn btn-danger btn-eliminar-producto" data-producto-id="${producto.id}">Eliminar</button>
+      </p>
+    `;
+  });
+
+  // Actualiza el total al final
+  totalDiv.textContent = `Total: $${total.toFixed(2)}`;
+}
   </script>
 
 <script src="../JavaScript/main.js" type="module"></script>
@@ -551,10 +571,10 @@ function actualizarInterfazCarritoPopup() {
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 <script src="../Productos/productos.json"></script>
-<script src="../Productos/carrito.js" type="module"></script>
+
 <script src="../CarritoCompras/paypal2.js"></script>
 <script src="./busqueda.js" type="module"></script>
-
+<script src="../Productos/carrito.js" type="module"></script>
 
 </body>
 </html>
