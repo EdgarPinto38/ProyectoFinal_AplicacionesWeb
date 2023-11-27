@@ -1,3 +1,4 @@
+import { showMessage } from "./showMessage.js"
 function agregarAlCarrito(id) {
   const producto = obtenerProductoPorId(id);
 
@@ -28,7 +29,9 @@ function mostrarMensajePopup(mensaje) {
     mensajeGlobalElement.textContent = mensaje;
 
     // Mostrar el mensaje
+    alert("Producto agregado al carrito")
     mensajeGlobalElement.style.display = "block";
+    
 
     // Ocultar el mensaje después de 3 segundos (puedes ajustar el tiempo según tus necesidades)
     setTimeout(function () {
