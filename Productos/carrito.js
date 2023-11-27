@@ -29,7 +29,7 @@ function mostrarMensajePopup(mensaje) {
     mensajeGlobalElement.textContent = mensaje;
 
     // Mostrar el mensaje
-    alert("Producto agregado al carrito")
+    
     mensajeGlobalElement.style.display = "block";
     
 
