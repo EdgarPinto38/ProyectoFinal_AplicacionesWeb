@@ -1,4 +1,4 @@
-import { showMessage } from "./showMessage.js"
+
 function agregarAlCarrito(id) {
   const producto = obtenerProductoPorId(id);
 
